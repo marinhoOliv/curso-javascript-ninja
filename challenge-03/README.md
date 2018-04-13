@@ -189,7 +189,7 @@ pessoa.apresentacao = function() {
 
 
     if( pessoa.sexo === "feminino") {
-        artigo = "a"; 
+        sexo = "a"; 
     } 
     if(pessoa.idade <= 1) {
         idadeAno = "ano";
