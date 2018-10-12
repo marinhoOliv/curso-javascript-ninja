@@ -4,8 +4,8 @@ para começar o desafio.
 Declare uma variável chamada `championship` que receberá o nome do campeonato,
 e imprima o nome desse campeonato no console.
 */
-var championship = 'paulistão';
-console.log(object);
+var championship = 'brasileirão';
+console.log(championship);
 
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
@@ -13,7 +13,7 @@ Os elementos serão nomes de times do campeonato escolhido, e os nomes devem
 estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
-var teams = ['Palmeiras', 'São Paulo', 'Santos', 'Portuguesa', 'Red Bull'];
+var teams = ['Palmeiras', 'São Paulo', 'Santos', 'Inter', 'Gremio'];
 console.log( 'Times que estão participando do campeonato:', teams );
 
 /*
