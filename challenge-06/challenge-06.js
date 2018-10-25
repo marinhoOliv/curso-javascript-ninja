@@ -48,6 +48,7 @@ function showTeamPosition(number) {
 
         case 4:
         return 'O time que está em 4º lugar é o ' + teams[3];
+        break;
 
         case 5:
         return 'O time que está em 5º lugar é o ' + teams[4];
@@ -62,24 +63,29 @@ function showTeamPosition(number) {
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
-showTeamPosition(1);
+console.log( showTeamPosition(1));
 // "O time que está em 1º lugar é o Palmeiras"
-showTeamPosition(2);
+console.log( showTeamPosition(2));
 // "O time que está em 2º lugar é o São Paulo"
-showTeamPosition(3);
+console.log( showTeamPosition(3));
 // "O time que está em 3º lugar é o Santos"
-showTeamPosition(4);
+console.log( showTeamPosition(4));
 // "O time que está em 4º lugar é o Portuguesa"
-showTeamPosition(5);
+console.log( showTeamPosition(5));
 // "O time que está em 5º lugar é o Red Bull"
-showTeamPosition(6);
+console.log( showTeamPosition(6));
 // "Não temos a informação do time que está nessa posição."
 
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
-// ?
+var numberCounterPlus = 20;
+
+while (numberCounterPlus <= 30) {
+    console.log( numberCounterPlus++ );
+}
+
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
@@ -93,9 +99,28 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-// ?
+function convertToHex(cor) {
+    switch (cor) {
+        case 'black':
+            return `O hexadecimal para a cor ${cor} é #000000.`;
+            break;
+        case 'white':
+            return `O hexadecimal para a cor ${cor} é #ffffff`;
+            break;
+        case 'gray':
+            return `O hexadecimal para a cor ${cor} é #f0f0f0`;
+            break;
+    
+        default:
+            return `Não temos o equivalente hexadecimal para ${cor}.`
+            break;
+    }
+}
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
-// ?
+console.log( convertToHex('gray') );
+console.log( convertToHex('black') );
+console.log( convertToHex('white') );
+console.log( convertToHex('purple') );
